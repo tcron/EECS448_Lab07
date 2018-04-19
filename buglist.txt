@@ -1,0 +1,11 @@
+Known bugs:
+
+isEmpty() always returns true.
+addBack() adds to the front.
+removeFront() and removeBack() currently do not remove anything.
+
+My guess is that the remove functions do not work because they are 
+relying on the isEmpty() function, which is broken. Similarly, it
+may be the case that addBack() is relying on isEmpty() to determine
+if it should add to the back if the function returns false or to add 
+to the front if it returns true.
